@@ -1,7 +1,9 @@
 {
   "name": "ga2-e796b7",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true
+    }
   },
   "customizations": {
     "vscode": {
@@ -11,5 +13,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "postCreateCommand": "pip install uv && uv pip install fastapi"
 }
